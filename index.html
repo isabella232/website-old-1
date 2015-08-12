@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payload | The Future of Finance</title>
+    <link rel="shortcut icon" href="http://www.favicon-generator.org/favicon-generator/htdocs/favicons/2015-07-30/7279aa97a8953329f7d7369ca1953d22.ico"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+      var w = window.outerWidth;
+      function viewChange(){
+        w = window.outerWidth;
+        if(w<601){
+          document.getElementById('navbar').style.display="none";
+        }
+        else{
+          document.getElementById('navbar').style.display="inline";
+        }
+        if(w<980){
+          $('.powerBack').css({top:10, position:'absolute'});
+          $('.powerP').css({display:'block'});
+        }
+        else if(w>980){
+          $('.powerP').css({display:'none'});
+        }
+        $('#scrollspy').css('margin-bottom','64px');
+        scrollChange();
+      }
+      function drop(){
+        if(document.getElementById('navbar').style.display=="none"){
+          document.getElementById('navbar').style.display="inline";
+          $('#scrollspy').css('margin-bottom','119px');
+        }
+        else{
+          document.getElementById('navbar').style.display="none";
+          $('#scrollspy').css({bottom:64, position:'fixed'});
+          $('#scrollspy').css('margin-bottom','64px');
+        }
+      }
+      function scrollChange(){
+        var height = $(window).scrollTop();
+        w = window.outerWidth;
+        if(height>1260){
+          $('#scrollspy').css('display','block');
+        }
+        else{
+          $('#scrollspy').css('display','none');
+        }
+        if(w<601){
+          //if(height)
+            //$('#powerMonitor').css('display','none');
+            //$('#worksMonitor').css('display','none');
+            //$('#testimonialsMonitor').css('display','none');
+            //$('#merchantsMonitor').css('display','none');
+        }
+      }
+      $(document).ready(function(){
+        $('#safe').hover(function(){
+          if(w > 980){
+            $('#safeP').slideToggle(600);
+            $('#safeBack').animate({top:'+=300px'},600);
+          }
+        },
+        function(){
+          if(w > 980){
+            $('#safeP').slideToggle(600);
+            $('#safeBack').animate({top:'-=300px'},600);
+          }
+        });
+        $('#instant').hover(function(){
+          if(w > 980){
+            $('#instantP').slideToggle(600);
+            $('#instantBack').animate({top:'+=300px'},600);
+          }
+        },
+        function(){
+          if(w > 980){
+            $('#instantP').slideToggle(600);
+            $('#instantBack').animate({top:'-=300px'},600);
+          }
+        });
+        $('#free').hover(function(){
+          if(w > 980){
+            $('#freeP').slideToggle(600);
+            $('#freeBack').animate({top:'+=340px'},600);
+          }
+        },
+        function(){
+          if(w > 980){
+            $('#freeP').slideToggle(600);
+            $('#freeBack').animate({top:'-=340px'},600);
+          }
+        });
+      });
+    </script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" onscroll="scrollChange()" onresize="viewChange()" onload="viewChange()">
+    <p id="sign"><a href="#">SIGN UP</a> | <a href="#">SIGN IN</a>
+    <div id="home">
+      <img id="logo" src="Payload White.png"/>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators dots" id="indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active slickSlide">
+            <p class="paragraphLeft" style="color:white">Revolutionizing<br>Payment<br>Processing</p>
+            <img src="Payload Customer.png" class="imageRight"/>
+          </div>
+        </div>
+          <!-- Left and right controls -->
+          <!--
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          -->
+      </div>
+    </div>
+    <div id="welcome">
+      <center><img src="/Users/ShafiRubbani/Documents/Payload/Payload Logo.png" alt="Payload" align="center"/>
+      <img src="/Users/ShafiRubbani/Documents/Payload/Bitcoin.png" alt="Bitcoin"/>
+      <img src="/Users/ShafiRubbani/Documents/Payload/Bitcoin Customer.png" alt="Bitcoin Customer"/></center>
+      <p>Welcome to Payload. We’re an organization <br>dedicated to facilitating the adoption of bitcoin in <br>Pakistan.
+        Our simple, easy to use technology <br>enables businesses to accept payment in bitcoin <br>while only handling Pakistani Rupees.</p>
+      <center><a href="#">Click to Learn About Bitcoin</a></center>
+    </div>
+    <div id="power">
+      <div id="safe">
+        <p class="powerH">Safe</p>
+        <p id="safeP" class="powerP">Bitcoin transactions provide greater anonymity for both buyers and sellers than both cash and credit card transactions.</p>
+        <img class="powerI" src="Safe Man.png"/>
+        <div class="powerBack" id="safeBack">
+        </div>
+      </div>
+      <div id="instant">
+        <p class="powerH">Instant</p>
+        <p id="instantP" class="powerP">Whereas traditional wire transfers can take days, bitcoin enables users to transfer money in minutes.</p>
+        <img class="powerI" src="Instant Man.png"/>
+        <div class="powerBack" id="instantBack">
+        </div>
+      </div>
+      <div id="free">
+        <p class="powerH">Quick</p>
+        <p id="freeP" class="powerP">Without the burden of a central bank, bitcoin users can make payments and transfers anywhere without worrying about various governmental fees.</p>
+        <img class="powerI" src="Free Man.png"/>
+        <div class="powerBack" id="freeBack">
+        </div>
+      </div>
+    </div>
+    <div id="works">
+    </div>
+    <div id="testimonials">
+    </div>
+    <div id="merchants">
+      <div>
+        <span id="gotBiz">Got a Business?</span><br>
+        <span id="wannaStart">Want to start<br>accepting Bitcoin<br>from you customers?</span><br>
+        <span id="wrongPlace">(you're in the wrong place pal)</span><br>
+        <span id="startNow"><a href="#">START ACCEPTING BITCOIN IN 3 EASY STEPS</a></span><br>
+        <span id="partner">BECOME A PAYLOAD PARTNER FOR FREE</span>
+      </div>
+      <img src="Elegant Man.png" class="centeredTaco"/>
+    </div>
+    <div id="filler">
+    </div>
+
+    <div id="scrollspy" class="navbar navbar-custom">
+      <ul id="scroll" class="nav navbar-nav">
+        <li id="powerMonitor"><a href="#power">Power of Bitcoin</a></li>
+        <li id="worksMonitor"><a href="#works">How It Works</a></li>
+        <li id="testimonialsMonitor"><a href="#testimonials">Testimonials</a></li>
+        <li id="merchantsMonitor"><a href="#merchants">Merchants</a></li>
+      </ul>
+      <p id="scrollSign"><a href="#">SIGN UP</a> | <a href="#">SIGN IN</a>
+    </div>
+    <div id="nav">
+      <div id="copyright">
+        <p>&#169; Copyright 2015 Payload</p>
+      </div>
+      <button id="dropdown" onclick="drop()" type="button"><i class="fa fa-bars"><!--fa-sort-asc--></i></button>
+      <div id="social-icons">
+        <a href="https://facebook.com.payloadpk"><img src="Facebook.png" alt="Like Us On Facebook" /></a>
+        <a href="https://twitter.com/payloadpk"><img src="Twitter.png" alt="Follow Us On Twitter" /></a>
+      </div>
+      <div id="navbar">
+        <a id="about" href="#">ABOUT</a>
+        <span id="dividerLine1">|</span>
+        <a href="#">HELP</a>
+        <span id="dividerLine2">|</span>
+        <a href="#">CONTACT</a>
+        <span id="dividerLine3">|</span>
+        <a id="download" href="#">DOWNLOAD APP</a>
+      </div>
+    </div>
+  </body>
+</html>
