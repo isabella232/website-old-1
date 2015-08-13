@@ -1,6 +1,9 @@
 html, body{
   height:100%;
 }
+body{
+  font-family:'Muli', sans-serif;
+}
 @font-face{
   font-family:"fontAwesome";
   src:url(fonts/fontawesome-webfont.eot);
@@ -326,12 +329,76 @@ html, body{
   margin-top:-12px;
   margin-right:10px;
 }
-#filler{
-  height:25px !important;
+#superFooter{
+  height:332px;
   width:100%;
+  background-color:#EFEFEF;
+  font-family:'Muli', sans-serif;
+  border-top-style:solid;
+  border-top-width:12px;
+  border-top-color:#FFB83D;
+  position:absolute;
   top:3780px;
+  left:0px;
+  z-index:-1;
+  overflow:hidden;
 }
-
+#superCopyright{
+  color:#C0C0C0;
+  position:absolute;
+  bottom:20px;
+  left:60px;
+}
+.superColumn{
+  display:inline-block;
+  margin-left:80px;
+  margin-top:80px;
+}
+.superList{
+  font-size:13pt;
+  text-align:left;
+  list-style-type:none;
+  padding:0px;
+  margin:0px;
+}
+.superList a{
+  color:black;
+  text-decoration:none;
+}
+#superApp{
+  color:#FF0017;
+}
+#writing{
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  z-index:-1;
+}
+#typing{
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  z-index:-1;
+}
+#superIcon{
+  position:absolute;
+  z-index:1;
+  bottom:25px;
+  right:75px;
+}
+#superIcon img{
+  height:30px;
+  width:auto;
+  margin:0px;
+  padding:0px;
+}
+/*#filler{
+  height:200px !important;
+  width:100%;
+  position:absolute;
+  top:4100px;
+}
+*/
 @media screen and (max-width:10000px){
   /*Laptop and Desktop View*/
   #logo{
@@ -559,6 +626,9 @@ html, body{
     margin-right:4px;
     margin-top:-14pt;
   }
+  .superColumn{
+    margin-left:40px;
+  }
 }
 @media screen and (max-width:780px){
   ul#scroll li{
@@ -632,12 +702,15 @@ html, body{
     background-color:#FFB83D;
   }
   ul#scroll li{
+    padding-top:0px;
     display:inline !important;
   }
   ul#scroll li a{
+    padding-top:0px;
     display:inline !important;
   }
   #scrollspy{
+    padding-top:0px;
     overflow:hidden;
   }
   #nav{
@@ -777,5 +850,8 @@ html, body{
   }
   #merchants div{
     margin-left:8%;
+  }
+  #superFooter{
+    display:none;
   }
 }

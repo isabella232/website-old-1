@@ -52,12 +52,45 @@
         else{
           $('#scrollspy').css('display','none');
         }
+        if(w>601){
+          if(height>3150){
+            $('#scrollspy').css('display','none');
+            $('#nav').css('display','none');
+          }
+          else {
+            $('#nav').css('display','block');
+          }
+        }
+        else{
+          $('#nav').css('display','block');
+        }
         if(w<601){
-          //if(height)
-            //$('#powerMonitor').css('display','none');
-            //$('#worksMonitor').css('display','none');
-            //$('#testimonialsMonitor').css('display','none');
-            //$('#merchantsMonitor').css('display','none');
+          if((height>630) && (height<1260)){
+            $('powerMonitor').css('display','inline');
+            $('worksMonitor').css('display','none');
+            $('testimonialsMonitor').css('display','none');
+            $('merchantsMonitor').css('display','none');
+          }
+          else if((height>1260) && (height<1890)){
+            $('powerMonitor').css('display','none');
+            $('worksMonitor').css('display','inline');
+            $('testimonialsMonitor').css('display','none');
+            $('merchantsMonitor').css('display','none');
+          }
+          else if((height>1890) && (height<2520)){
+            $('powerMonitor').css('display','none');
+            $('worksMonitor').css('display','none');
+            $('testimonialsMonitor').css('display','inline');
+            $('merchantsMonitor').css('display','none');
+          }
+          else if((height>2520) && (height<31500)){
+            $('powerMonitor').css('display','none');
+            $('worksMonitor').css('display','none');
+            $('testimonialsMonitor').css('display','none');
+            $('merchantsMonitor').css('display','inline');
+          }
+        }
+        else{
         }
       }
       $(document).ready(function(){
@@ -178,10 +211,10 @@
 
     <div id="scrollspy" class="navbar navbar-custom">
       <ul id="scroll" class="nav navbar-nav">
-        <li id="powerMonitor"><a href="#power">Power of Bitcoin</a></li>
-        <li id="worksMonitor"><a href="#works">How It Works</a></li>
-        <li id="testimonialsMonitor"><a href="#testimonials">Testimonials</a></li>
-        <li id="merchantsMonitor"><a href="#merchants">Merchants</a></li>
+        <li><a id="powerMonitor" href="#power">Power of Bitcoin</a></li>
+        <li><a id="worksMonitor" href="#works">How It Works</a></li>
+        <li><a id="testimonialsMonitor" href="#testimonials">Testimonials</a></li>
+        <li><a id="merchantsMonitor" href="#merchants">Merchants</a></li>
       </ul>
       <p id="scrollSign"><a href="#">SIGN UP</a> | <a href="#">SIGN IN</a>
     </div>
@@ -203,6 +236,41 @@
         <span id="dividerLine3">|</span>
         <a id="download" href="#">DOWNLOAD APP</a>
       </div>
+    </div>
+    <div id="superFooter">
+      <img id="writing" src="writing.png" />
+      <div id="superCopyright">
+        <p>&#169; Copyright 2015 Payload</p>
+      </div>
+      <center>
+        <div class="superColumn">
+          <ul class="superList">
+            <li><a class="superLink" href="#">ABOUT</a></li>
+            <li><a class="superLink" href="#">PRICING</a></li>
+            <li><a class="superLink" href="#">TERMS</a></li>
+          </ul>
+        </div>
+        <div class="superColumn">
+          <ul class="superList">
+            <li><a class="superLink" href="#">HELP</a></li>
+            <li><a class="superLink" href="#">CONTACT</a></li>
+            <li><a class="superLink" href="#">CAREERS</a></li>
+            <li><a class="superLink" href="#">SITE MAP</a></li>
+          </ul>
+        </div>
+        <div class="superColumn">
+          <ul class="superList">
+            <li><a class="superLink" id="superApp" href="#">DOWNLOAD APP</a></li>
+            <li><a class="superLink" href="#">LEARN ABOUT BITCOIN</a></li>
+            <li><a class="superLink" href="#">PAYLOAD PARTNERS</a></li>
+          </ul>
+        </div>
+      </center>
+      <div id="superIcon">
+        <a href="https://facebook.com.payloadpk"><img src="Facebook.png" alt="Like Us On Facebook" /></a>
+        <a href="https://twitter.com/payloadpk"><img src="Twitter.png" alt="Follow Us On Twitter" /></a>
+      </div>
+      <img id="typing" src="Typing.png" />
     </div>
   </body>
 </html>
