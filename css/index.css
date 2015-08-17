@@ -684,11 +684,11 @@ body{
   }
   ul#scroll li{
     padding-top:0px;
-    display:block !important;
+    display:inline!important;
   }
   ul#scroll li a{
     padding-top:0px;
-    display:block !important;
+    display:inline !important;
   }
   #scrollspy{
     padding-top:0px;
