@@ -207,32 +207,6 @@ body{
   font-family:'Muli', sans-serif;
   font-size:34pt;
 }
-.slickSlide{
-  width:100%;
-  height:630px;
-  z-index:-1;
-}
-.paragraphLeft{
-  position:absolute;
-  top:157px;
-  left:22.5%;
-}
-.imageRight{
-  position:absolute;
-  top:58px;
-  right:22.5%;
-}
-.carousel-control{
-  background-image:none !important;
-}
-#myCarousel{
-  width:100% !important;
-}
-.dots{
-  position:absolute !important;
-  bottom:100px;
-  z-index:3 !important;
-}
 #welcome{
   top:630px;
   font-family:'Muli', sans-serif;
@@ -674,7 +648,14 @@ body{
 @media screen and (max-width:767px){
   ul#scroll li a{
     display:inline !important;
-    margin-bottom:5px;
+  }
+  #scroll{
+    position:relative;
+    bottom:6px;
+    left:15px;
+  }
+  #scroll li{
+    margin-right:-5px;
   }
 }
 @media screen and (max-width:600px){
@@ -703,11 +684,11 @@ body{
   }
   ul#scroll li{
     padding-top:0px;
-    display:inline !important;
+    display:block !important;
   }
   ul#scroll li a{
     padding-top:0px;
-    display:inline !important;
+    display:block !important;
   }
   #scrollspy{
     padding-top:0px;
