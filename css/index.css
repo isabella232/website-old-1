@@ -373,7 +373,7 @@ body{
   top:4100px;
 }
 */
-@media screen and (max-width:1736px){
+@media screen and (max-width:1600px){
   /*Laptop and Desktop View*/
   #logo{
     position:absolute;
@@ -838,4 +838,40 @@ body{
   }
 }
 @media screen and (max-width:480px){
+  #sign{
+    margin-top:40px;
+    right:16%;
+  }
+  #welcome{
+    font-size:10pt;
+  }
+  #welcome img{
+    width:100px;
+    height:100px;
+    margin-top:130px;
+    margin-bottom:30px;
+  }
+  .powerH{
+    font-size:16pt;
+    margin-bottom:0px;
+  }
+  .powerP{
+    margin-top:0px;
+    font-size:11pt;
+  }
+  #instant img{
+    width:30% !important;
+    height:auto !important;
+  }
+  #merchants div{
+    margin-left:5%;
+    width:90%;
+  }
+  #startNow,
+  #partner{
+    font-size:10pt;
+  }
+  #navbar{
+    font-size:10pt;
+  }
 }
