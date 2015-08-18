@@ -783,7 +783,7 @@ body{
 
   }
   .powerBack{
-    height:210px !important;
+    height:205px !important;
     width:98% !important;
     left:0px !important;
     margin-top:0px !important;
@@ -877,6 +877,12 @@ body{
     font-size:10pt;
   }
 }
-@media screen and (max-wdith:320px){
-
+@media screen and (max-width:320px){
+  #startNow,
+  #partner{
+    font-size:9pt;
+  }
+  #navbar{
+    font-size:9pt;
+  }
 }
