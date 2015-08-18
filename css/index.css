@@ -885,4 +885,7 @@ body{
   #navbar{
     font-size:9pt;
   }
+  #copyright p{
+    font-size:6pt;
+  }
 }
