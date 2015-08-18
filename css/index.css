@@ -889,7 +889,8 @@ body{
     font-size:6pt;
   }
   #dropdown{
-    margin-left:12%;
+    padding-left:0px;
+    margin-left:8%;
     text-align:center;
   }
 }
