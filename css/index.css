@@ -244,14 +244,16 @@ body{
   display:block;
   position:absolute;
 }
+/*
 #works{
   top:1890px;
 }
 #testimonials{
   top:2520px;
 }
+*/
 #merchants{
-  top:3150px;
+  top:1890px;
   overflow:hidden;
 }
 #merchants img{
@@ -312,7 +314,7 @@ body{
   border-top-width:12px;
   border-top-color:#FFB83D;
   position:absolute;
-  top:3780px;
+  top:2520px;
   left:0px;
   z-index:-1;
   overflow:hidden;
@@ -874,4 +876,7 @@ body{
   #navbar{
     font-size:10pt;
   }
+}
+@media screen and (max-wdith:320px){
+
 }
