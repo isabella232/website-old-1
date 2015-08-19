@@ -203,10 +203,43 @@ body{
   position:absolute;
   z-index:-1;
 }
+#home{
+  overflow:hidden;
+}
 #home p{
   font-family:'Muli', sans-serif;
   font-size:34pt;
 }
+.item{
+  height:500px !important;
+}
+#coolSlide1{
+  background-position:center;
+  /*background-image:url('/Users/ShafiRubbani/Documents/Payload/ALAN 2.png');*/
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+#coolSlide2{
+  background-position:center;
+  background-image:url('/Users/ShafiRubbani/Documents/Payload/Payload Customer 2.png');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+#coolSlide3{
+  background-position:center;
+  /*background-image:url('/Users/ShafiRubbani/Documents/Payload/Credit Card Attack 2.png');*/
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+#coolSlide4{
+  background-position:center;
+  /*background-image:url('/Users/ShafiRubbani/Documents/Payload/Martian 2.png');*/
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+/*.slideImage{
+  display:inline;
+}*/
 #myCarousel{
 }
 .slickSlide{
