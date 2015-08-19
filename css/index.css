@@ -215,25 +215,25 @@ body{
 }
 #coolSlide1{
   background-position:center;
-  /*background-image:url('/Users/ShafiRubbani/Documents/Payload/ALAN 2.png');*/
+  background-image:url('../ALAN 2.png');
   background-repeat:no-repeat;
   background-attachment:fixed;
 }
 #coolSlide2{
   background-position:center;
-  background-image:url('/Users/ShafiRubbani/Documents/Payload/Payload Customer 2.png');
+  background-image:url('../Payload Customer 2.png');
   background-repeat:no-repeat;
   background-attachment:fixed;
 }
 #coolSlide3{
   background-position:center;
-  /*background-image:url('/Users/ShafiRubbani/Documents/Payload/Credit Card Attack 2.png');*/
+  background-image:url('../Credit Card Attack 2.png');
   background-repeat:no-repeat;
   background-attachment:fixed;
 }
 #coolSlide4{
   background-position:center;
-  /*background-image:url('/Users/ShafiRubbani/Documents/Payload/Martian 2.png');*/
+  background-image:url('../Martian 2.png');
   background-repeat:no-repeat;
   background-attachment:fixed;
 }
