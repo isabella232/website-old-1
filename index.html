@@ -25,9 +25,16 @@
         if(w<=1024){
           $('.powerBack').css({top:10, position:'absolute'});
           $('.powerP').css({display:'block'});
+          $('ALAN').attr('src',"rrara");
+          $('payloadCustomer').attr('src',"rrara");
+          $('credCard').attr('src',"rrara");
+          $('martian').attr('src',"rrara");
         }
         else if(w>=1024){
-          $('.powerP').css({display:'none'});
+          $('ALAN').attr('src',"img/ALAN 2.png");
+          $('payloadCustomer').attr('src',"img/Payload Customer 2.png");
+          $('credCard').attr('src',"Credit Card Attack 2.png");
+          $('martian').attr('src',"Martian 2.png");
         }
         //$('#scrollspy').css('margin-bottom','64px');
         scrollChange();
@@ -194,10 +201,10 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img class="slideImage" src="img/ALAN 2.png">
+              <img id="ALAN" class="slideImage" src="img/ALAN 2.png" />
             </div>
             <div class="item">
-              <img class="slideImage" src="img/Payload Customer 2.png">
+              <img id="payloadCustomer" class="slideImage" src="img/Payload Customer 2.png">
             </div>
             <div class="item">
               <img id="credCard" class="slideImage" src="img/Credit Card Attack 2.png">
@@ -286,7 +293,7 @@
       </div>
     </div>
     <div id="superFooter"><!--Expanded footer menu-->
-      <img id="writing" src="img/writing.png" /><!--Writing picture-->
+      <img id="writing" src="img/Writing.png" /><!--Writing picture-->
       <div id="superCopyright"><!--Copyright symbol and message-->
         <p>&#169; Copyright 2015 Payload</p>
       </div>
