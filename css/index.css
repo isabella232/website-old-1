@@ -375,9 +375,7 @@ body{
   top:4100px;
 }
 */
-@media screen
-  and (min-width:1600px)
-  and (-webkit-min-device-pixel-ratio:2){
+@media screen and (max-width:5120px){
     /*Laptop and Desktop View*/
   #logo{
     position:absolute;
@@ -435,6 +433,8 @@ body{
   #instant img{
     width:99% !important;
     height:auto !important;
+    max-height:400px;
+    max-width:477px;
   }
   #power{
     text-align:center;
@@ -493,6 +493,9 @@ body{
   ul#scroll li {
       display:inline !important;
   }
+  #nav{
+    display:none;
+  }
   #navbar{
     font-size:13pt;
   }
@@ -504,6 +507,8 @@ body{
     right:6%;
     width:32%;
     height:auto;
+    max-height:503px;
+    max-width:400px;
     /*height:500px;
     width:auto;*/
   }
@@ -588,6 +593,8 @@ body{
   #instant img{
     width:99% !important;
     height:auto !important;
+    max-height:400px;
+    max-width:477px;
   }
   #power{
     text-align:center;
@@ -645,6 +652,9 @@ body{
   }
   ul#scroll li {
     display:inline !important;
+  }
+  #nav{
+    display:block;
   }
   #navbar{
     font-size:13pt;
