@@ -875,7 +875,7 @@ body{
     border-radius:4px;
     line-height:20px;
     display:inline;
-    padding-left:0px !important;
+    padding-left:4px !important;
     margin-left:0% !important;
     text-align:center;
   }
