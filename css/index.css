@@ -876,6 +876,9 @@ body{
     line-height:20px;
     display:inline;
     margin-left:8%;
+    padding-left:8px;
+    margin-left:2%;
+    text-align:center;
   }
   #dropdown:active{
     color:#EFEFEF;
