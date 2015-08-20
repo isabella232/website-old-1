@@ -876,7 +876,7 @@ body{
     line-height:20px;
     display:inline;
     padding-left:8px;
-    margin-left:2%;
+    margin-left:0% !important;
     text-align:center;
   }
   #dropdown:active{
