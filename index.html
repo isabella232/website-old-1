@@ -25,16 +25,18 @@
         if(w<=1024){
           $('.powerBack').css({top:10, position:'absolute'});
           $('.powerP').css({display:'block'});
-          $('ALAN').attr('src',"rrara");
-          $('payloadCustomer').attr('src',"rrara");
-          $('credCard').attr('src',"rrara");
-          $('martian').attr('src',"rrara");
         }
-        else if(w>=1024){
-          $('ALAN').attr('src',"img/ALAN 2.png");
-          $('payloadCustomer').attr('src',"img/Payload Customer 2.png");
-          $('credCard').attr('src',"Credit Card Attack 2.png");
-          $('martian').attr('src',"Martian 2.png");
+        if(w<=736){
+          $('#ALAN').attr('src',"img/2.png");
+          $('#payloadCustomer').attr('src',"img/1.png");
+          $('#credCard').attr('src',"img/3.png");
+          $('#martian').attr('src',"img/4.png");
+        }
+        else if(w>=736){
+          $('#ALAN').attr('src',"img/ALAN 2.png");
+          $('#payloadCustomer').attr('src',"img/Payload Customer 2.png");
+          $('#credCard').attr('src',"img/Credit Card Attack 2.png");
+          $('#martian').attr('src',"img/Martian 2.png");
         }
         //$('#scrollspy').css('margin-bottom','64px');
         scrollChange();

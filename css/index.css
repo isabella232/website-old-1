@@ -859,6 +859,17 @@ body{
 }
 @media screen and (max-width:736px){
   /*Mobile View*/
+  #ALAN,
+  #payloadCustomer,
+  #martian,
+  #credCard{
+    margin-top:50px;
+    width:70%;
+  }
+  #martian,
+  #credCard{
+    margin-top:110px;
+  }
   #welcome{
     font-size:12pt;
   }
